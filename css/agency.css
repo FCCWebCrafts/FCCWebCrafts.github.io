@@ -875,3 +875,8 @@ img::-moz- {
 body {
     webkit-tap-highlight-color: #50AA40;
 }
+
+.team-member img { 
+    height: 250px; 
+    width: 250px; 
+    object-fit: cover; }
