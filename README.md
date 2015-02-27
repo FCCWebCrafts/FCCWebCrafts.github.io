@@ -2,7 +2,7 @@ TEST - serhiicss
 
 # [FCC](http://www.freecodecamp.com/learn-to-code) - [Web Crafts](http://fccwebcrafts.github.io/)
 
-[Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
+[Web Crafts]http://fccwebcrafts.github.io/) is a sister startup to [Free Code Camp](http://www.freecodecamp.com/learn-to-code) created by FCC students. This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
 
 ## Getting Started
 
