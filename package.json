@@ -1,0 +1,17 @@
+{
+  "name": "FCCWebCrafts.github.io",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://dannyfritz@github.com/FCCWebCrafts/FCCWebCrafts.github.io.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FCCWebCrafts/FCCWebCrafts.github.io/issues"
+  },
+  "homepage": "https://github.com/FCCWebCrafts/FCCWebCrafts.github.io",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.1"
+  }
+}
