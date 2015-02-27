@@ -69,7 +69,7 @@ var membersData = [
 	},
 	{
 		name: 'Ammar Shah',
-		image: 'http://i.imgur.com/hR45RKd.jpg',
+		image: 'img/team/Ammar.jpg',
 		description: 'FCC Student/Volunteer and Contributor',
 		githubUsername: 'AmmarAliShah',
 		facebookUsername: 'technofreak24',
@@ -77,7 +77,7 @@ var membersData = [
 	},
 	{
 		name: 'Kian Moretz',
-		image: 'http://i.imgur.com/SHIai57.jpg',
+		image: 'img/team/kian.jpg',
 		description: 'FCC Student and Contributor',
 		githubUsername: 'meecoder',
 		twitterUsername: '7obuIsAwesome',
