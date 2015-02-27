@@ -1,4 +1,4 @@
-TEST - serhiicss
+[![Stories in Ready](https://badge.waffle.io/FCCWebCrafts/FCCWebCrafts.github.io.png?label=ready&title=Ready)](http://waffle.io/FCCWebCrafts/FCCWebCrafts.github.io)
 
 # [FCC](http://www.freecodecamp.com/learn-to-code) - [Web Crafts](http://fccwebcrafts.github.io/)
 
