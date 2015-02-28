@@ -13,17 +13,17 @@
     <title>Welcome To FCCWC</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -230,7 +230,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                  <div class="about" >
+                  <div class="about">
                     <h3>ABOUT</h3>
                     <p>The basic idea behind this website is to help us evolve as Web Developers. This website is going to serve as the base line for us to team up and participate in various projects and build amazing things for the web. Working as a small web development team, we hope to improve our skills and eventually work for the non-profits worldwide. This site is almost like a web-journal for all the cool stuff that we build in the process of learning, and we hope that you enjoy and appreciate all our resultant final projects.</p>
                   </div>
@@ -330,48 +330,43 @@
             </div>
             <div class="row" id="members">
                 <script type="text/html" id="memberTemplate">
-                    <div class="col-sm-4">
-                        <div class="team-member">
-                            <img src="<%- image %>" class="img-responsive img-circle" alt="">
-                            <h4><%- name %></h4>
-                            <p class="text-muted"><%- description %></p>
-                            <ul class="list-inline social-buttons">
-                                <% if (typeof githubUsername != "undefined") { %>
-                                <li>
-                                    <a href="https://github.com/<%- githubUsername %>" target="_blank"><i class="fa fa-github"></i></a>
-                                </li>
-                                <% } %>
-                                <% if (typeof facebookUsername != "undefined") { %>
-                                <li>
-                                    <a href="https://www.facebook.com/<%- facebookUsername %>" target="_blank"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <% } %>
-                                <% if (typeof linkedInUsername != "undefined") { %>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/<%- linkedInUsername %>" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <% } %>
-                                <% if (typeof twitterUsername != "undefined") { %>
-                                <li>
-                                    <a href="https://twitter.com/<%- twitterUsername %>" target="_blank"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <% } %>
-                                <% if (typeof googlePlusUrl != "undefined") { %>
-                                <li>
-                                    <a href="<%- googlePlusUrl %>" target="_blank"><i class="fa fa-google-plus"></i></a>
-                                </li>
-                                <% } %>
-                            </ul>
-                        </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="<%- image %>" class="img-responsive img-circle" alt="">
+                        <h4><%- name %></h4>
+                        <p class="text-muted"><%- description %></p>
+                        <ul class="list-inline social-buttons">
+                            <% if (typeof githubUsername != "undefined") { %>
+                            <li>
+                                <a href="https://github.com/<%- githubUsername %>" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+                            <% } %>
+                            <% if (typeof facebookUsername != "undefined") { %>
+                            <li>
+                                <a href="https://www.facebook.com/<%- facebookUsername %>" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <% } %>
+                            <% if (typeof linkedInUsername != "undefined") { %>
+                            <li>
+                                <a href="https://www.linkedin.com/in/<%- linkedInUsername %>" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <% } %>
+                            <% if (typeof twitterUsername != "undefined") { %>
+                            <li>
+                                <a href="https://twitter.com/<%- twitterUsername %>" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <% } %>
+                            <% if (typeof googlePlusUrl != "undefined") { %>
+                            <li>
+                                <a href="<%- googlePlusUrl %>" target="_blank"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <% } %>
+                        </ul>
                     </div>
+                </div>
                 </script>
             </div>
-            <!--<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>-->
-
+        </div>
     </section> <!-- END Team Section -->
 
     <!-- Clients Aside -->
@@ -454,14 +449,14 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                    <li><a href="https://github.com/FCCWebCrafts/FCCWebCrafts.github.io" target="_blank"><i class="fa fa-github"></i></a>
+                    	<li><a href="https://github.com/FCCWebCrafts/FCCWebCrafts.github.io" target="_blank"><i class="fa fa-github"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        <!--<li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -647,18 +642,18 @@
     </div>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <!-- LoDash -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/3.3.1/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.3.1/lodash.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/cbpAnimatedHeader.min.js"></script>
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
