@@ -13,17 +13,17 @@
     <title>Welcome To FCCWC</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -328,229 +328,45 @@
                     <h3 class="section-subheading text-muted">In code we trust.</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="members">
+                <script type="text/html" id="memberTemplate">
                 <div class="col-sm-4">
-                    <!-- Added changes Thiago Ferreira below -->
                     <div class="team-member">
-                        <img src="img/team/TF1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Thiago Ferreira</h4>
-                        <p class="text-muted">FCC Student and Contributor</p>
+                        <img src="<%- image %>" class="img-responsive img-circle" alt="">
+                        <h4><%- name %></h4>
+                        <p class="text-muted"><%- description %></p>
                         <ul class="list-inline social-buttons">
-                            <li><a href="https://github.com/ThiagoFerreir4" target="_blank"><i class="fa fa-github"></i></a>
+                            <% if (typeof githubUsername != "undefined") { %>
+                            <li>
+                                <a href="https://github.com/<%- githubUsername %>" target="_blank"><i class="fa fa-github"></i></a>
                             </li>
-                            <li><a href="https://www.facebook.com/thiagoferreira.fi" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <% } %>
+                            <% if (typeof facebookUsername != "undefined") { %>
+                            <li>
+                                <a href="https://www.facebook.com/<%- facebookUsername %>" target="_blank"><i class="fa fa-facebook"></i></a>
                             </li>
-                            <li><a href="fi.linkedin.com/in/ThiagoFerreir4" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <% } %>
+                            <% if (typeof linkedInUsername != "undefined") { %>
+                            <li>
+                                <a href="https://www.linkedin.com/in/<%- linkedInUsername %>" target="_blank"><i class="fa fa-linkedin"></i></a>
                             </li>
+                            <% } %>
+                            <% if (typeof twitterUsername != "undefined") { %>
+                            <li>
+                                <a href="https://twitter.com/<%- twitterUsername %>" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <% } %>
+                            <% if (typeof googlePlusUrl != "undefined") { %>
+                            <li>
+                                <a href="<%- googlePlusUrl %>" target="_blank"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <% } %>
                         </ul>
                     </div>
                 </div>
-
-                <div class="col-sm-4">
-                  <!-- Team member Kapil Dutta section -->
-                    <div class="team-member">
-                        <img src="img/team/KD1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kapil Dutta</h4>
-                        <p class="text-muted">FCC Student and Contributor</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://twitter.com/duttakapil" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://facebook.com/duttakapil" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://github.com/duttakapil" target="_blank"><i class="fa fa-github"></i></a>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/duttakapil" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                <!-- Team member cerissa section -->
-                    <div class="team-member">
-                        <img src="img/team/c1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Cerissa</h4>
-                        <p class="text-muted">FCC Student and Contributor</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://twitter.com/flagrl20" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://www.facebook.com/cerissa.leach.7" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://github.com/cerissa"  target="_blank"><i class="fa fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row"></div>
-                <div class="col-sm-4">
-                    <!-- Team member Serhii section -->
-                    <div class="team-member">
-                        <img src="img/team/serhii.jpg" class="img-responsive img-circle" alt="Serhii">
-                        <h4>Serhii</h4>
-                        <p class="text-muted">FCC Student and Contributor</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://github.com/serhiicss/serhiicss.github.io" target="_blank"><i class="fa fa-github"></i></a>
-                            </li>
-                            <li><a href="https://twitter.com/Serhiicss" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://plus.google.com/u/0/113544134561435695482/posts" target="_blank"><i class="fa fa-google"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                   <!-- Team member Germaine P. setion -->
-                    <div class="team-member">
-                        <img src="img/team/glp-prof.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Germaine P.</h4>
-                        <p class="text-muted">FCC Student and Contributor</p>
-                        <ul class="list-inline social-buttons">
-                          <li><a href="https://twitter.com/G_as_in_Genius" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                          <li><a href="https://github.com/germainep" target="_blank"><i class="fa fa-github"></i></a>
-                            </li>
-                          <li><a href="https://www.linkedin.com/profile/view?id=147097850&trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Team member Ammar Shah setion -->
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/Ammar.jpg" class="img-responsive img-circle" alt="Ammar Shah">
-                        <h4>Ammar Shah</h4>
-                        <p class="text-muted">FCC Student/Volunteer and Contributor</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://twitter.com/AmmarAliShahK" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://www.facebook.com/technofreak24" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="https://github.com/AmmarAliShah" target="_blank"><i class="fa fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Team member Kian section -->
-                <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/kian.jpg" class="img-responsive img-circle" alt="Kian Moretz">
-                        <h4>Kian Moretz</h4>
-                        <p class="text-muted">FCC Student and Contributor</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="https://twitter.com/7obuIsAwesome" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="https://plus.google.com/113139441985488356503" target="_blank"><i class="fa fa-google"></i></a>
-                            </li>
-                            <li><a href="https://github.com/meecoder" target="_blank"><i class="fa fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="https://pbs.twimg.com/profile_images/562385977390272512/AK29YaTf.png" class="img-responsive img-circle" alt="">
-                        <h4>New user</h4>
-                        <p class="text-muted">FCC Student and Contributor</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-github"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="https://pbs.twimg.com/profile_images/562385977390272512/AK29YaTf.png" class="img-responsive img-circle" alt="">
-                        <h4>New user</h4>
-                        <p class="text-muted">FCC Student and Contributor</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-github"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="https://pbs.twimg.com/profile_images/562385977390272512/AK29YaTf.png" class="img-responsive img-circle" alt="">
-                        <h4>New user</h4>
-                        <p class="text-muted">FCC Student and Contributor</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-github"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="https://pbs.twimg.com/profile_images/562385977390272512/AK29YaTf.png" class="img-responsive img-circle" alt="">
-                        <h4>New user</h4>
-                        <p class="text-muted">FCC Student and Contributor</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-github"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="https://pbs.twimg.com/profile_images/562385977390272512/AK29YaTf.png" class="img-responsive img-circle" alt="">
-                        <h4>New user</h4>
-                        <p class="text-muted">FCC Student and Contributor</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-github"></i></a>
-                            </li>
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                </div>
+                </script>
             </div>
-            <!--<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>-->
-
+        </div>
     </section> <!-- END Team Section -->
 
     <!-- Clients Aside -->
@@ -633,7 +449,8 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                    <li><a href="https://github.com/FCCWebCrafts/FCCWebCrafts.github.io" target="_blank"><i class="fa fa-github"></i></a></li>
+                    	<li><a href="https://github.com/FCCWebCrafts/FCCWebCrafts.github.io" target="_blank"><i class="fa fa-github"></i></a>
+                        </li>
                         <!--<li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a>
@@ -825,13 +642,16 @@
     </div>
 
     <!-- jQuery -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- LoDash -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.3.1/lodash.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.min.js"></script>
 
