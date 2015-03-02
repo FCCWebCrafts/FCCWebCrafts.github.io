@@ -1,0 +1,2 @@
+A internal chat room built using Node. 
+Can be used for communication between teams. 
