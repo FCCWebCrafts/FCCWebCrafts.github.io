@@ -33,7 +33,8 @@ var membersData = [
 		description: 'FCC Student and Contributor',
 		githubUsername: 'ThiagoFerreir4',
 		facebookUsername: 'thiagoferreira.fi',
-		linkedInUsername: 'ThiagoFerreir4'
+		linkedInUsername: 'ThiagoFerreir4',
+                twitterUsername: 'Ferreir4Thiago'
 	},
 	{
 		name: 'Kapil Dutta',
