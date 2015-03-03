@@ -41,7 +41,7 @@ var membersData = [
 		image: 'img/team/KD1.jpg',
 		description: 'FCC Student and Contributor',
 		githubUsername: 'duttakapil',
-		facebookUsername: 'duttakapil.fi',
+		facebookUsername: 'duttakapil',
 		linkedInUsername: 'duttakapil',
 		twitterUsername: 'duttakapil'
 	},
